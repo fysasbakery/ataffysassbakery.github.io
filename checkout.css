@@ -1,0 +1,121 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menata tampilan body */
+body {
+    font-family: Arial, sans-serif;
+    background: url(backgroud.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container utama */
+.containerr {
+    background-color: rgb(239, 237, 237);
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Menata baris dan kolom */
+.roww {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Menata kolom kiri dan kanan */
+.coll {
+    width: 48%;
+}
+
+/* Styling untuk judul */
+.tittel {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling untuk setiap input box */
+.inputbox {
+    margin-bottom: 15px;
+}
+
+.inputbox span {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.inputbox input:focus {
+    border-color: rgb(122, 106,83);
+}
+
+/* Menata input dengan tipe text dan number */
+.inputbox input[type="text"],
+.inputbox input[type="number"] {
+    width: calc(100% - 20px);
+}
+
+/* Menata flexbox untuk elemen di dalam kolom */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Menata gambar untuk kartu pembayaran */
+.inputbox img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+/* Styling untuk tombol submit */
+.submit {
+    background-color: rgb(122, 106,83);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(114, 114, 114);
+    color: #fff;
+}
+
+/* Styling untuk responsif di layar kecil */
+@media (max-width: 768px) {
+    .roww {
+        flex-direction: column;
+    }
+
+    .coll {
+        width: 100%;
+    }
+}
